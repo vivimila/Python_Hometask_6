@@ -17,7 +17,7 @@ def input_an_action (entering):
             print("Неверный ввод. Повторите попытку")
             continue
         value = int(value)
-        if str(board[value -1]) in "XO":
+        if str(board[value - 1]) in "XO":
             print("УПС! Место занято. Повторите попытку")
             continue
         board[value -1] = entering
@@ -44,7 +44,7 @@ def game():
                 game_board()
                 print(winner, "Победитель!")
                 break
-        count +1
+        count += 1
         if count > 8:
             game_board()
             print("Ничья")
